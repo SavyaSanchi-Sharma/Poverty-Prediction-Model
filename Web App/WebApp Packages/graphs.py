@@ -77,28 +77,24 @@ def plot_poverty_gap_vs_hc_ratio(filtered_data):
 
 def plot_hc_ratio_over_time(country_data, country):
     """
-    Plots the HC Ratio over time for a specific country using Streamlit's line_chart.
+    Plots the HC Ratio over time for a specific country using Streamlit's bar_chart.
     """
     st.subheader(f'HC Ratio Over Time for {country}')
-    st.line_chart(country_data[['year', 'hc_ratio']].set_index('year'))
-
+    st.bar_chart(country_data[['year', 'hc_ratio']].set_index('year'))
 
 def plot_international_poverty_gap_over_time(country_data, country):
     """
-    Plots the International Poverty Gap over time for a specific country using Streamlit's line_chart.
+    Plots the International Poverty Gap over time for a specific country using Streamlit's bar_chart.
     """
     st.subheader(f'International Poverty Gap Over Time for {country}')
-    st.line_chart(country_data[['year', 'international_poverty_gap']].set_index('year'))
-
-
+    st.bar_chart(country_data[['year', 'international_poverty_gap']].set_index('year'))
 
 def plot_poverty_gap_over_time(country_data, country):
     """
-    Plots the $1 Poverty Gap over time for a specific country using Streamlit's line_chart.
+    Plots the $1 Poverty Gap over time for a specific country using Streamlit's bar_chart.
     """
     st.subheader(f'$1 Poverty Gap Over Time for {country}')
-    st.line_chart(country_data[['year', '$1_poverty_gap']].set_index('year'))
-    
+    st.bar_chart(country_data[['year', '$1_poverty_gap']].set_index('year'))
     
 ## Graphs for Poverty_model_2
 
@@ -119,7 +115,7 @@ def plot_headcount_vs_shortfall(Poverty_2):
     ).interactive()  # Enables zooming and panning
     st.altair_chart(scatter_chart)
     
-def plot_hc_ratio_over_time(df, country):
+def plot_headcount_over_time(df, country):
     """
     Plots HC Ratio over time for a specific country using Altair scatter plot.
     """
