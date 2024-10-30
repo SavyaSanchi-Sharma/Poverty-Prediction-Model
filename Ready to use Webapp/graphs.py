@@ -75,27 +75,51 @@ def plot_poverty_gap_vs_hc_ratio(filtered_data):
     st.altair_chart(scatter_chart)
 
 
-def plot_hc_ratio_over_time(country_data, country):
+def plot_hc_ratio_over_time(df, country):
     """
     Plots the HC Ratio over time for a specific country using Streamlit's bar_chart.
     """
+    country_data=df.loc[df['country']==country]
     st.subheader(f'HC Ratio Over Time for {country}')
-    st.bar_chart(country_data[['year', 'hc_ratio']].set_index('year'))
-
-def plot_international_poverty_gap_over_time(country_data, country):
+    line_chart = alt.Chart(country_data).mark_line(point=True).encode(
+        x='year:O',  # 'year' treated as an ordinal value for better readability
+        y='hc_ratio',
+        tooltip=['year', 'hc_ratio']
+    ).properties(
+        width=700,
+        height=400
+    ).interactive() 
+    st.altair_chart(line_chart)
+def plot_international_poverty_gap_over_time(df, country):
     """
     Plots the International Poverty Gap over time for a specific country using Streamlit's bar_chart.
     """
+    country_data=df.loc[df['country']==country]
     st.subheader(f'International Poverty Gap Over Time for {country}')
-    st.bar_chart(country_data[['year', 'international_poverty_gap']].set_index('year'))
-
-def plot_poverty_gap_over_time(country_data, country):
+    line_chart = alt.Chart(country_data).mark_line(point=True).encode(
+        x='year:O',  # 'year' treated as an ordinal value for better readability
+        y='international_poverty_gap',
+        tooltip=['year', 'international_poverty_gap']
+    ).properties(
+        width=700,
+        height=400
+    ).interactive() 
+    st.altair_chart(line_chart)
+def plot_poverty_gap_over_time(df, country):
     """
     Plots the $1 Poverty Gap over time for a specific country using Streamlit's bar_chart.
     """
+    country_data=df.loc[df['country']==country]
     st.subheader(f'$1 Poverty Gap Over Time for {country}')
-    st.bar_chart(country_data[['year', '$1_poverty_gap']].set_index('year'))
-    
+    line_chart = alt.Chart(country_data).mark_line(point=True).encode(
+        x='year:O',  # 'year' treated as an ordinal value for better readability
+        y='$1_poverty_gap',
+        tooltip=['year', '$1_poverty_gap']
+    ).properties(
+        width=700,
+        height=400
+    ).interactive() 
+    st.altair_chart(line_chart)
 ## Graphs for Poverty_model_2
 
 def plot_headcount_vs_shortfall(Poverty_2):
@@ -119,7 +143,7 @@ def plot_headcount_over_time(df, country):
     """
     Plots HC Ratio over time for a specific country using Altair scatter plot.
     """
-    st.subheader(f'HC Ratio Over Time for {country}')
+    st.subheader(f'Poverty Headcount Over Time for {country}')
 
     # Filter data for the selected country
     country_data = df[df['country'] == country]

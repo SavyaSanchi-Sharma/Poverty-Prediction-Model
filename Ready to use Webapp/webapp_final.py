@@ -19,7 +19,7 @@ with open('country_encoder.pkl','rb') as file:
     
     
 def main():
-    st.title('Poverty Predictor and Poverty analysis')
+    st.title('Poverty Predictor and Visual analysis')
     df=data.clean_data('pip_dataset.csv')
     tabs=st.tabs(["Poverty Gaps Prediction and Visual Analysis","International Poverty Shortfall Prediction and Visual Analysis","About The Project","About The Dataset"])
     countries=df['country'].drop_duplicates()

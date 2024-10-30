@@ -19,6 +19,38 @@ with open('country_encoder.pkl','rb') as file:
     
     
 def main():
+    st.markdown(
+    """
+    <style>
+    body {
+        background-color: #1e1e1e;  /* Dark background */
+        color: #f0f0f0;  /* Light text color */
+    }
+    .main {
+        background-color: #1e1e1e;  /* Dark background for the main area */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff;  /* White headings for better visibility */
+    }
+    .stButton>button {
+        background-color: #007bff;  /* Button background color */
+        color: white;  /* Button text color */
+    }
+    .stButton>button:hover {
+        background-color: #0056b3;  /* Button hover color */
+    }
+    .stSelectbox, .stMultiselect, .stTextInput {
+        background-color: #2a2a2a;  /* Dark input background */
+        color: #ffffff;  /* Input text color */
+    }
+    .stTextInput {
+        border: 1px solid #007bff;  /* Input border color */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+  )
+
     st.title('Poverty Predictor and Poverty analysis')
     df=data.clean_data('pip_dataset.csv')
     tabs=st.tabs(["Poverty Gaps Prediction and Visual Analysis","International Poverty Shortfall Prediction and Visual Analysis","About The Project","About The Dataset"])
