@@ -43,21 +43,14 @@ By predicting future poverty gaps and the international poverty line shortfall, 
 ### Dataset
 A global dataset of poverty and inequality measures prepared by **Our World in Data** from the World Bank's **Poverty and Inequality Platform (PIP)** database.
 
-To view the full codebook [click here]('https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Dataset/pip_codebook.csv') 
+To view the full codebook [click here](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Dataset/pip_codebook.csv) 
 
 
 ### Required Packages
 
 #### Core Dependencies
 - pandas - Data manipulation and analysis
-- numpy - Numerical computations
-- tensorflow - Machine learning and neural networks
-- scikit-learn- Data Preprocessing and Feature Engineering
-- matplotlib - Static data visualization
-- seaborn - Statistical data visualization
-- plotly - Interactive visualizations
-- streamlit - Web application interface
-
+- numpy - Numerical computationshttps://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/LICENSE.txt
 #### Custom Packages
 - Povert_Cleaning - Cleaning the dataset
 - EDA_Poverty - Filtering Columns according to the goal
@@ -65,16 +58,16 @@ To view the full codebook [click here]('https://github.com/SavyaSanchi-Sharma/Po
 - poverty_model1 - Artificial Neural Network Model to predict poverty gaps
 - poverty_model2 - Artificial Neural Network Model to predict international poverty shortfall
 
-**Note:** All these packages are available at [Custom Packages]('https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/tree/main/Web%20App/WebApp%20Packages')
+**Note:** All these packages are available at [Custom Packages](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/tree/main/Web%20App/WebApp%20Packages)
 
 #### Custom Trained Model and Encoders
-You can get the trained models and encoder [here]('https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/tree/main/Web%20App/Trained%20Models%20and%20Encoder')
+You can get the trained models and encoder [here](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/tree/main/Web%20App/Trained%20Models%20and%20Encoder)
 
 ### Setup Instructions
 
 1. Clone the repository:
    ```bash
-   git clone ['https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model.git']
+   git clone [https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model.git]
    cd [Poverty-Prediction-Model]
    ```
 
@@ -118,9 +111,12 @@ The application will open in your default web browser at `http://localhost:8501`
 - **Predictive Modeling:** Leverage advanced Artificial Neural Networks to build predictive models, forecasting future poverty gaps with unparalleled accuracy.
 
 ## 📊 Screenshots
-[Add screenshots of your web application here]
-
-
+![Extreme Poverty Gap Prediction UI](1.png)
+![Extreme Poverty Gap Visualisation UI](2.png)
+![Country wise Poverty Gap Visualisation UI](3.png)
+![International Poverty Shortfall Prediction UI](4.png)
+![International Poverty Shortfall Visualisation UI](5.png)
+![Country wise International Poverty Shortfall Visualisation UI](6.png)
 ## 🐛 Troubleshooting
 Common issues and solutions:
 1. Port already in use:
@@ -138,4 +134,4 @@ Common issues and solutions:
 - Email: [savyasanchisharma.official@gmail.com]
 
 ## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/LICENSE.txt) file for details.
