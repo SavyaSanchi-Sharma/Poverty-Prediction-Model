@@ -50,7 +50,7 @@ To view the full codebook [click here](https://github.com/SavyaSanchi-Sharma/Pov
 
 #### Core Dependencies
 - pandas - Data manipulation and analysis
-- numpy - Numerical computationshttps://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/LICENSE.txt
+- numpy - Numerical computations
 #### Custom Packages
 - Povert_Cleaning - Cleaning the dataset
 - EDA_Poverty - Filtering Columns according to the goal
@@ -67,8 +67,8 @@ You can get the trained models and encoder [here](https://github.com/SavyaSanchi
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model.git]
-   cd [Poverty-Prediction-Model]
+   git clone https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model.git
+   cd Poverty-Prediction-Model
    ```
 
 2. Install required packages:
@@ -111,17 +111,17 @@ The application will open in your default web browser at `http://localhost:8501`
 - **Predictive Modeling:** Leverage advanced Artificial Neural Networks to build predictive models, forecasting future poverty gaps with unparalleled accuracy.
 
 ## 📊 Screenshots
-![Extreme Poverty Gap Prediction UI](1.png)
-![Extreme Poverty Gap Visualisation UI](2.png)
-![Country wise Poverty Gap Visualisation UI](3.png)
-![International Poverty Shortfall Prediction UI](4.png)
-![International Poverty Shortfall Visualisation UI](5.png)
-![Country wise International Poverty Shortfall Visualisation UI](6.png)
+![Extreme Poverty Gap Prediction UI](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Screenshots/1.png)
+![Extreme Poverty Gap Visualisation UI](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Screenshots/2.png)
+![Country wise Poverty Gap Visualisation UI](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Screenshots/3.png)
+![International Poverty Shortfall Prediction UI](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Screenshots/4.png)
+![International Poverty Shortfall Visualisation UI](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Screenshots/5.png)
+![Country wise International Poverty Shortfall Visualisation UI](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Screenshots/6.png)
 ## 🐛 Troubleshooting
 Common issues and solutions:
 1. Port already in use:
    ```bash
-   streamlit run app.py --port [alternative-port]
+   streamlit run app.py --port <alternative-port>
    ```
 2. Package conflicts:
    ```bash
@@ -129,9 +129,10 @@ Common issues and solutions:
    ```
 
 ## 📫 Contact
-[Your Name]
-- GitHub: [@SavyaSanchi-Sharma]
-- Email: [savyasanchisharma.official@gmail.com]
-
+- Name: Savya Sanchi Sharma
+- GitHub: [@SavyaSanchi-Sharma](https://github.com/SavyaSanchi-Sharma)
+- Email: savyasanchisharma.official@gmail.com
+- LinkedIn:[Savya Sanchi Sharma's LinkedIn](https://www.linkedin.com/in/savya-sanchi-sharma-001a3b288)
+- X: [@CoffeeAndCompile](https://x.com/coffeendcompile)
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/LICENSE.txt) file for details.
