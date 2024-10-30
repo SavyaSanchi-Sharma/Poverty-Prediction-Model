@@ -40,6 +40,12 @@ By predicting future poverty gaps and the international poverty line shortfall, 
 - Python 3.8 or higher
 - Git
 
+### Dataset
+A global dataset of poverty and inequality measures prepared by **Our World in Data** from the World Bank's **Poverty and Inequality Platform (PIP)** database.
+
+To view the full codebook [click here]('https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/blob/main/Dataset/pip_codebook.csv') 
+
+
 ### Required Packages
 
 #### Core Dependencies
@@ -53,19 +59,32 @@ By predicting future poverty gaps and the international poverty line shortfall, 
 - streamlit - Web application interface
 
 #### Custom Packages
-[List your custom packages here with brief descriptions]
+- Povert_Cleaning - Cleaning the dataset
+- EDA_Poverty - Filtering Columns according to the goal
+- graphs - All the graphs for visual analysis
+- poverty_model1 - Artificial Neural Network Model to predict poverty gaps
+- poverty_model2 - Artificial Neural Network Model to predict international poverty shortfall
+
+**Note:** All these packages are available at [Custom Packages]('https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/tree/main/Web%20App/WebApp%20Packages')
+
+#### Custom Trained Model and Encoders
+You can get the trained models and encoder [here]('https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model/tree/main/Web%20App/Trained%20Models%20and%20Encoder')
 
 ### Setup Instructions
 
 1. Clone the repository:
    ```bash
-   git clone [your-repository-url]
-   cd [your-project-name]
+   git clone ['https://github.com/SavyaSanchi-Sharma/Poverty-Prediction-Model.git']
+   cd [Poverty-Prediction-Model]
    ```
 
 2. Install required packages:
    ```bash
    pip install -r requirements.txt
+   ```
+   Or install individually:
+   ```bash
+   pip install pandas numpy tensorflow matplotlib seaborn plotly streamlit
    ```
 
 3. Run the Streamlit app:
@@ -81,55 +100,26 @@ streamlit run app.py
 ```
 The application will open in your default web browser at `http://localhost:8501`
 
-### Features Guide
-1. Data Upload & Preprocessing
-   - Upload your dataset
-   - Apply preprocessing techniques
-   - View data statistics
+## 🌍 Poverty Prediction Project Features Guide
 
-2. Visualization
-   - Interactive charts
-   - Statistical plots
-   - Geographic visualizations
+## 1. Data Upload & Preprocessing 📊
+- **Seamless Upload:** Effortlessly upload your dataset through a user-friendly interface, ensuring a smooth start to your analysis journey.
+- **Dynamic Preprocessing:** Automatically apply cutting-edge preprocessing techniques to cleanse and prepare your data, making it ready for insightful analysis.
+- **Statistics at a Glance:** Gain quick insights into your data with comprehensive statistics, helping you understand trends and anomalies before diving deeper.
 
-3. Analysis
-   - Poverty metrics calculation
-   - Trend analysis
-   - Predictive modeling
+## 2. Visualization 🎨
+- **Interactive Charts:** Engage with your data like never before through dynamic, interactive charts that bring your findings to life and allow for exploratory analysis.
+- **Statistical Plots:** Utilize a variety of statistical plots to illustrate key relationships and distributions within your data, making complex information easily digestible.
+- **Geographic Visualizations:** Uncover geographical trends in poverty with stunning visualizations that highlight disparities and patterns across different regions.
 
-## 📁 Project Structure
-```
-project/
-├── app.py                  # Main Streamlit application
-├── data/                   # Data directory
-│   ├── raw/               # Raw data files
-│   └── processed/         # Processed data files
-├── src/                   # Source code
-│   ├── preprocessing/     # Data preprocessing modules
-│   ├── visualization/     # Visualization modules
-│   ├── analysis/         # Analysis modules
-│   └── utils/            # Utility functions
-├── models/               # Trained models
-├── requirements.txt      # Project dependencies
-├── LICENSE              
-└── README.md
-```
+## 3. Analysis 🔍
+- **Poverty Metrics Calculation:** Calculate essential poverty metrics tailored to your specific interests, providing a clear picture of poverty levels and their implications.
+- **Trend Analysis:** Analyze historical trends in poverty rates to identify patterns and inform future projections, ensuring that your insights are grounded in data.
+- **Predictive Modeling:** Leverage advanced Artificial Neural Networks to build predictive models, forecasting future poverty gaps with unparalleled accuracy.
 
 ## 📊 Screenshots
 [Add screenshots of your web application here]
 
-## 🔧 Configuration
-The application can be configured through the following environment variables:
-```bash
-PORT=8501  # Default Streamlit port
-```
-
-## 🤝 Contributing
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/YourFeature`
-3. Commit changes: `git commit -am 'Add YourFeature'`
-4. Push to branch: `git push origin feature/YourFeature`
-5. Submit a Pull Request
 
 ## 🐛 Troubleshooting
 Common issues and solutions:
@@ -144,39 +134,8 @@ Common issues and solutions:
 
 ## 📫 Contact
 [Your Name]
-- GitHub: [@yourusername]
-- Email: [your.email@example.com]
+- GitHub: [@SavyaSanchi-Sharma]
+- Email: [savyasanchisharma.official@gmail.com]
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Requirements
-To install all required packages, run:
-```bash
-pip install -r requirements.txt
-```
-
-Or install individually:
-```bash
-pip install pandas numpy tensorflow matplotlib seaborn plotly streamlit
-```
-
-Python Version: 3.8 or higher
-
-### Dependency List
-```
-pandas>=1.5.0
-numpy>=1.21.0
-tensorflow>=2.10.0
-matplotlib>=3.5.0
-seaborn>=0.12.0
-plotly>=5.10.0
-streamlit>=1.20.0
-```
-
-[Add any specific version requirements for your custom packages]
-
----
-Created with by [Your Name]
