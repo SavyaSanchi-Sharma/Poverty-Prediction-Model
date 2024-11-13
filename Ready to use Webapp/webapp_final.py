@@ -3,7 +3,8 @@ import EDA_Poverty as EDA
 import poverty_model1
 import poverty_model2
 import graphs
-from tensorflow.keras.models import load_model
+from tensorflow import keras
+from keras.models import load_model
 import pickle
 import streamlit
 import pandas as pd 

@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np 
-from tensorflow.keras.models import load_model
+from tensorflow import keras
+from keras.models import load_model
 import pickle
 
 model = load_model('poverty_predictor.h5')
